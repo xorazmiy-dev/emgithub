@@ -602,3 +602,8 @@ function scopeCss(styleText, scopeSelector) {
   }
   return rules.join('\n');
 }
+
+function buildPlaygroundUrl(source_url, lang_id) {
+  const playgroundPrefixUrl = 'https://ide.xorazmiy.dev';
+  return `${playgroundPrefixUrl}?source_url=${encodeURI(source_url)}&lang_id=${lang_id}`;
+}
