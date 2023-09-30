@@ -290,6 +290,37 @@
   }
 </style>
 
+<style>
+   .run-button {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 10px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  </style>
+
 
 <div id="${containerId}" class="emgithub-container">
   <div class="lds-ring">
@@ -320,14 +351,13 @@
       delivered <span class="hide-in-phone">with ❤ </span>by <a target="_blank" href="${serviceProvider}">emgithub</a>
     </div>`: ''
     }
-    
-    ${showRun ? `<div class="file-meta file-meta-${isDarkStyle ? 'dark' : 'light'}"
-      style="${showBorder ? '' : 'border:0'}">
-      <a target="_blank" href="${buildPlaygroundUrl(rawFileURL, langId)}" style="float:right">Run</a>
-    </div>`: ''
-    }
-
   </div>
+  ${showRun ? `<div>
+    <a target="_blank" href="${buildPlaygroundUrl(rawFileURL, langId)}" style="float:right">
+        <button class="run-button">Sinab ko'ring</button>
+    </a>
+  </div>`: ''
+  }
 
 </div>
 
