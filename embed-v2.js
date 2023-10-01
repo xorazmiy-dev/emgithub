@@ -605,5 +605,5 @@ function scopeCss(styleText, scopeSelector) {
 
 function buildPlaygroundUrl(source_url, lang_id) {
   const playgroundPrefixUrl = 'https://code.xorazmiy.dev';
-  return `${playgroundPrefixUrl}?source_url=${encodeURI(source_url)}&lang_id=${lang_id}`;
+  return `${playgroundPrefixUrl}?source_url=${encodeURIComponent(source_url)}&lang_id=${lang_id}`;
 }
