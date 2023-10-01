@@ -351,14 +351,14 @@
       delivered <span class="hide-in-phone">with ❤ </span>by <a target="_blank" href="${serviceProvider}">emgithub</a>
     </div>`: ''
     }
-  </div>
-  ${showRun ? `<div>
-    <a target="_blank" href="${buildPlaygroundUrl(rawFileURL, langId)}" style="float:right">
-        <button class="run-button">Sinab ko'ring</button>
-    </a>
-  </div>`: ''
-  }
 
+    ${showRun ? `<div>
+      <a target="_blank" href="${buildPlaygroundUrl(rawFileURL, langId)}" style="float:right">
+          <button class="run-button">Sinab ko'ring</button>
+      </a>
+    </div>`: ''
+    }
+  </div>
 </div>
 
 `);
