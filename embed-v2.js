@@ -334,7 +334,7 @@
     style="display:none;${showBorder ? '' : 'border:0'}">
     <div class="file-data ${styleClassName}">
       ${type === 'code' ? `<div class="code-area">
-        ${showCopy ? `<a class="copy-btn copy-btn-${isDarkStyle ? 'dark' : 'light'}" href="javascript:void(0)">Copy</a>`
+        ${showCopy ? `<a class="copy-btn copy-btn-${isDarkStyle ? 'dark' : 'light'}" href="javascript:void(0)">Ko'chirish</a>`
         : ''}
         <pre><code class="${fileExtension} ${showLineNumbers ? '' : 'hide-line-numbers'}"></code></pre>
       </div>`: ''}
