@@ -353,7 +353,7 @@
     }
 
     ${showRun ? `<div>
-      <a target="_blank" href="${buildPlaygroundUrl(rawFileURL, langId)}" style="float:right">
+      <a target="_blank" href="${buildPlaygroundUrl(rawFileURL, langId)}" style="float:left">
           <button class="run-button">Sinab ko'ring</button>
       </a>
     </div>`: ''
